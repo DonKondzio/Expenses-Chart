@@ -70,17 +70,21 @@ body {
             filter: brightness(1.2);
             cursor: pointer;
           }
+          &.active {
+            background-color: $cyan;
+          }
           .day-amount-container {
             display: none;
-            width: 60px;
-            height: 30px;
+            width: 50px;
+            height: 25px;
             position: absolute;
-            top: -40px;
-            left: -6px;
+            top: -35px;
+            left: -7px;
             border-radius: 5px;
             background-color: $darkBrown;
             .day-amount {
-              line-height: 2;
+              font-size: 1.4rem;
+              line-height: 1.8;
               text-align: center;
               color: $veryPaleOrange;
             }
@@ -161,6 +165,22 @@ body {
         .info-left {
           &-amount {
             font-size: 4.4rem;
+          }
+        }
+      }
+      .chart {
+        .weekday {
+          .bar {
+            .day-amount-container {
+              top: -40px;
+              left: -6px;
+              width: 60px;
+              height: 30px;
+              .day-amount {
+                font-size: 1.6rem;
+                line-height: 2;
+              }
+            }
           }
         }
       }
